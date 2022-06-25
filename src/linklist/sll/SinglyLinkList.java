@@ -36,7 +36,6 @@ public class SinglyLinkList {
     }
 
     public void insertAtTail(int v) {
-        System.out.println("Adding value :: " + v + " at the Tail");
         Node newNode = new Node(v);
         if (null == head) {
             head = newNode;

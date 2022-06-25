@@ -65,4 +65,20 @@ public class SLLUtil {
 
         return prev;
     }
+
+    public static Node createList(int n) {
+        if (n <= 0)
+            return null;
+
+        Node head = new Node(1);
+        Node cur = head;
+
+        for (int curVal = 2; curVal <= n; curVal++) {
+            Node newNode = new Node(curVal);
+            cur.next = newNode;
+            cur = cur.next;
+        }
+
+        return head;
+    }
 }
