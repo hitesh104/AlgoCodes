@@ -16,7 +16,7 @@ public class ExtractNumber {
         int number2 = getNumber(singlyLinkList2.getHead());
         System.out.println(number2);
 
-        System.out.println(" number 1 * number 2 = " + (number1 * number2));
+        System.out.println(" number 1 + number 2 = " + (number1 + number2));
     }
 
     static int getNumber(Node head) {
