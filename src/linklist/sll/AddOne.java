@@ -22,10 +22,9 @@ public class AddOne {
         int carry = 1;
         while (cur != null) {
             int curSum = cur.val + carry;
-            int curVal = curSum % 10;
             carry = curSum / 10;
 
-            cur.val = curVal;
+            cur.val = curSum % 10;
             last = cur;
             cur = cur.next;
         }
